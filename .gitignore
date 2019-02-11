@@ -1,0 +1,9 @@
+// Node
+package-lock.json
+node_modules/
+
+// MacOS
+.DS_Store
+
+// Input
+input_files/

@@ -1,0 +1,25 @@
+{
+  "name": "ctm-discord-bot",
+  "version": "1.0.0",
+  "description": "Discord bot for CTM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/professor-l/ctm-discord-bot.git"
+  },
+  "author": "Elle Nolan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/professor-l/ctm-discord-bot/issues"
+  },
+  "homepage": "https://github.com/professor-l/ctm-discord-bot#readme",
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "discord.js": "^11.4.2",
+    "fs": "0.0.1-security",
+    "markdown-table": "^1.1.2"
+  }
+}
