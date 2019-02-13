@@ -28,17 +28,16 @@ class Leaderboard {
     convertToTable() {
         let f = [["#", "Twitch", "Name", "Score", "Country"]]
 
-        let invalids = 0;
+        let valids = 0;
 
         for (let i = 0; i < this.leaderboard.length; i++) {
 
             let r = this.leaderboard[i].slice();
             if (r[0])
-                r[0] = i + (1 - invalids);
+                r[0] = ++valids;
             else {
                 r[0] = "-";
                 r[3] += "*";
-                invalids++;
             }
 
             f.push(r);
@@ -61,7 +60,7 @@ class Leaderboard {
         let char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890_";
 
         let l1 = Math.floor(Math.random() * 12) + 3;
-        let l2 = Math.floor(Math.random() * 12  ) + 3;
+        let l2 = Math.floor(Math.random() * 12) + 3;
         let l3 = Math.floor(Math.random() * 16) + 3;
         for (let i = 0; i < l1; i++)
             username += char[Math.floor(Math.random() * 63)];
